@@ -1,0 +1,31 @@
+<div fxLayout="row" [style.margin-bottom]="'4px'">
+    <mat-toolbar>
+      <div fxLayout="row"  style="width: 100%;display:inline-flex;justify-content: space-between;">
+        <span>Progress</span>
+      </div>
+      </mat-toolbar>
+</div>
+<mat-card>
+    <mat-card-content>
+      <section class="example-section">
+        <mat-progress-bar
+            class="example-margin"
+            color="primary"
+            [mode]="mode"
+            [value]="value"
+            [bufferValue]="bufferValue">
+        </mat-progress-bar>
+      </section>
+
+      <div fxLayout="row">
+        <div class="row wrap" style="display: flex;justify-content:space-evenly;">
+            <span>Male</span>
+            <span>{{male}}</span>
+          </div>
+          <div class="row wrap" style="display: flex;justify-content: space-evenly;">
+            <span>Female</span>
+            <span>{{female}}</span>
+          </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
